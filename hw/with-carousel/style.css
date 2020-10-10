@@ -1,0 +1,152 @@
+:root {
+    --main-red-color: #F1533C;
+    --main-yellow-color: #F5DE38;
+    --main-light-gray-color: #ACACAC;
+    --main-black-color: #232528;
+    --main-white-color: #ffffff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-black-color);
+}
+h1#page-title {
+    font-size: 60px;
+}
+a {
+    color: var(--main-red-color);
+
+}
+a:link {
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a:hover {
+    color: var(--main-yellow-color);
+}
+a:active {
+    color: #000000;
+}
+a.table-choice {
+    padding: 15px;
+}
+/* TABLE */
+table {
+    /* border:solid black 2px;
+    border-radius: 12px; */
+    text-align: center;
+    /* border-collapse: collapse; */
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th {
+    border-bottom: 3px solid var(--main-black-color);
+    padding: 32px;
+}
+th {
+    font-weight: bolder;
+    font-size: 36px;
+    padding-bottom: 3px;
+    text-align: left;
+    padding-left: 3px;
+    padding-right:3px;
+}
+td.property:hover {
+    background-color: var(--main-yellow-color);
+}
+td.action:hover {
+    background-color: var(--main-light-gray-color); 
+}
+div#food-information {
+    text-align: center;
+}
+
+
+/* a.table-choice:hover{
+    /* background-color: #767573; */
+    /* padding: 12px;
+    border: 3px solid #ffffff; /*background color*/
+    /* border-radius: 12px; */
+/*} */
+
+/* CAROUSEl https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.carousel-container {
+    max-width: 1000px;
+    position: relative; /* relative to window size */
+    margin: auto; /* centered */
+}
+/* .carousel-slide {
+    display: none; /* Hide images by default
+} */
+/* I am so confused */
+.prev, .next {
+    cursor:pointer;
+    position: absolute; /* doesn't depend on other css properties */
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:var(--main-white-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+/* Caption text */
+.carousel-text {
+    color: var(--main-white-color);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+.carousel-number {
+  color: var(--main-white-color);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

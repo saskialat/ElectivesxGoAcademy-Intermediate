@@ -1,0 +1,64 @@
+<!-- SASKIA LATIEVARYA
+     Saturday, October 10, 2020
+     Electives x GoAcademy Intermediate 
+     DAY 1 - MODULE 0
+     HTML
+     HWWWWWWWWW
+     Exercise 1 -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <link rel="stylesheet" href="style.css">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+     <body>
+         <!-- Title -->
+         <h1 id="page-title">Foods</h1>
+         <!-- Carousel https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+         <div class="carousel-container">
+             <!-- Carousel Images -->
+             <div class="carousel-slide">
+                <div class="carousel-number">1/2</div>
+                <img src="assets/nasi-goreng-1.jpg" alt="Nasi Goreng image" style="width:100%">
+                <div class="carousel-text">Nasi Goreng</div>
+             </div>
+             <div class="carousel-slide">
+                <div class="carousel-number">2/2</div>
+                <img src="assets/empty.jpg" alt="empty image placeholder" style="width:100%">
+                <div class="carousel-text">EMPTY</div>
+             </div>
+             <!-- Carousel next & prev buttons -->
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             <!-- Dots -->
+             <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+         </div>
+         <!-- table for food and properties -->
+         <div id="food-information">
+             <table id="food-table">
+                 <tr class="table-titles">
+                     <th class="characteristics">Name</th>
+                     <th class="characteristics">Price</th>
+                     <!-- <th class="characteristics"></th> -->
+                 </tr>
+                 <tr class="table-content">
+                     <td class="property">Nasi Goreng</td>
+                     <td class="property">10000.0</td>
+                     <td class="action"><a href="" class="table-choice">Show</a></td>
+                     <td class="action"><a href="" class="table-choice">Edit</a></td>
+                     <td class="action"><a href="" class="table-choice">Destroy</a></td>
+                 </tr>
+             </table>
+             <br>
+             <a href="" class="new-food">New Food</a>
+         </div>  
+     </body>
+     </html>
+     
+     <!-- CHROME DEVELOPER TOOLS
+          ==$0 when you select an element
+          can use $0 in the console 
+          to search for the code-->
