@@ -1,0 +1,104 @@
+/* SASKIA LATIEVARYA
+   Saturday, October 10, 2020
+   Electives x GoAcademy Intermediate
+   DAY 1 - MODULE 0
+   CSS
+   Exercise 1 - continuation */
+body {
+    /* background: #767573; */
+    /* background: #515150; */
+    /* background: #484847; */
+    /* background: #363636; */
+    background: #2F2F2F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #D0CFC8;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+/* a:hover MUST come after a:link and a:visited
+   a:active MUST come after a:hover 
+   -https://www.w3schools.com/css/css_link.asp */
+a {
+    color: #F1533C;
+}
+a:link {
+    text-decoration: none;
+}
+/* a:visited {
+
+} */
+a:hover {
+    color: #767573;
+}
+a:active {
+    color: #363636;
+}
+div#food-information {
+    text-align: center; /* Why doesn't this 
+    align table.food-table to the center? */
+} 
+table#food-table {
+    background: #000000;
+    /* aligns text in the table NOT the table itself */
+    text-align: center; 
+    border:solid black 6px;
+    /* rounded outer table border */
+    border-radius:12px;
+    /* center table - why should I do this though? */  
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10px;  - why doesn't this have any effects*/
+    margin-bottom: 12px;
+}
+td, th {
+    border:solid black 1px;
+    /* rounded inner table border */
+    border-radius:12px;
+}
+
+th.characteristics {
+    color: #DCC418;
+    padding: 12px;
+    font-size: larger;
+}
+td {
+    background: #D0CFC8;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+td.action {
+    background: #000000;
+}
+td:hover {
+    background: #000000;
+    color: #D0CFC8;
+} */
+tr:hover {
+    background: #767573; /* why doesn't this work? */
+}
+a.new-food {
+    background-color: #000000;
+    padding: 18px; /* Why doesn't this work? */
+    border-radius:12px;
+    /* font-size: larger; */
+} 
+
+
+/* UR GONNA CHANGE UR MIND:-) */
+/* if u don't want the hover on the actions
+td.property:hover {
+    background: #000000;
+    color: #D0CFC8;
+} */
+/* div#food-table {
+    overflow-x:auto; 
+} */
+/* 
+th.characteristics {
+    background: #DCC418;
+    /* border-top: none; */ /*
+} */

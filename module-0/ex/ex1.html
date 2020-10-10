@@ -1,34 +1,39 @@
 <!-- SASKIA LATIEVARYA
      Saturday, October 10, 2020
      Electives x GoAcademy Intermediate 
+     DAY 1 - MODULE 0
      HTML
      Exercise 1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <!-- Title -->
     <h1>Foods</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>Nasi Goreng</td>
-            <td>10000.0</td>
-            <td>
-                <a href="">Show</a>
-                <a href="">Edit</a>
-                <a href="">Destroy</a>
-            </td>
-        </tr>
-    </table>
-    <a href="">New Food</a>
+    <!-- table for food and properties -->
+    <div id="food-information">
+        <table id="food-table">
+            <tr>
+                <th class="characteristics">Name</th>
+                <th class="characteristics">Price</th>
+                <!-- <th class="characteristics"></th> -->
+            </tr>
+            <tr>
+                <td class="property">Nasi Goreng</td>
+                <td class="property">10000.0</td>
+                <td class="action"> <a href="" class="action">Show</a> </td>
+                <td class="action"><a href="">Edit</a></td>
+                <td class="action"><a href="">Destroy</a></td>
+            </tr>
+        </table>
+        <a href="" class="new-food">New Food</a>
+    </div>
+    
     
 </body>
 </html>
