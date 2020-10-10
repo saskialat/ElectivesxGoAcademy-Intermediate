@@ -1,0 +1,91 @@
+<!-- SASKIA LATIEVARYA
+     Saturday, October 10, 2020
+     Electives x GoAcademy - Day 1 - Module 0
+     Ka Kemal Anshari Elmizan 
+    
+     <b> in header does not work -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hello World </title>
+</head>
+<body>
+    <h1> Hello World </h1>
+    <p> It's a good manner to learn a new language by saying <b> Hello World </b> :) </p>
+    <h4> What I know without order based on preference</h4>
+    <ul>
+        <li> C++ </li>
+        <li> Ruby </li>
+        <li> Java </li>
+        <li> Python </li>
+        <li> HTML </li>
+    </ul>
+    <h4> What I know <b>with</b> order based on preference </h4> 
+    <ol>
+        <li> C++ </li>
+        <li> <sub> Ruby </sub> </li>
+        <li> <mark> Java </mark> </li> <!-- Highlights -->
+        <li> Python </li>
+        <li> HTML </li>
+    </ol>
+
+    <table style="width:100%">
+        <tr>
+            <th> Header 1 </th>
+            <th> Header 2 </th> 
+            <th> Header 3 </th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1 </td>
+            <td>Row 1, Column 2 </td>
+            <td>Row 1, Column 3 </td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1 </td>
+            <td>Row 2, Column 2 </td>
+            <td>Row 2, Column 3 </td>
+        </tr>
+    </table>
+    <img src="/hello-world.jpg" alt="no image inserted">
+    <a href="https://gojek.com"> Gojek.com </a>
+
+    <div class="class-name">
+        <form>
+            <label for="first-name"> First name:</label> <!-- points to first-name 
+            pointing is good for accessibility: disability-->
+            <input type="text" id="first-name" name="first-name">
+            <br>
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name">
+            <br>
+            <label for="radio" id="female" name="gender">Female</label>
+            <input type="radio" id="female" name="gender">
+            <br>
+            <label for="radio" id="male" name="gender">Male</label>
+            <input type="radio" id="male" name="gender">
+            <br>
+            <label for="radio" id="non-binary" name="gender">Other:</label>
+            <input type="text" id="non-binary" name="gender">
+            <br>
+        </form>
+    </div>
+
+</body>
+</html>
+
+<!--
+    ***********************class and id differences***********************
+    class can be used for many elements
+    id can only be used for one element 
+        - we can use id for multiple elements
+        - but, only applies to the first id found
+        - Developer tools: document.querySelector("#test") # -> query for id
+        - example: 
+            <h1 id="test"> Hi <\test>
+            <h1 id="test"> Ho <\test>
+
+    What is the diffeerence between name and id? What do they do?
+    name groups them together
+-->

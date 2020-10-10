@@ -1,0 +1,16 @@
+h1 {
+    color:blue;
+    text-align: center;
+}
+/* specific to the id */
+#woah-id {
+    color: #ff0000;
+}
+/* specific to the class */
+.woah-class {
+    color: salmon;
+}
+/* specific to p with id="green" */
+p.green {
+    color: green;
+} /* h1.green will not get selected! */
