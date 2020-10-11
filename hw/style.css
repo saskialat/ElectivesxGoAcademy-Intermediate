@@ -3,7 +3,7 @@
     --main-yellow-color: #F5DE38;
     --main-light-gray-color: #ACACAC;
     --main-black-color: #232528;
-    --main-white-color: #ffffff;
+    --main-white-color: #8b8686;
     --main-blue-color: #245BFF;
 }
 body {
@@ -18,7 +18,6 @@ body {
     width: 100%;
 }
 .navbar {
-    /* overflow: hidden;  */
     background-color: var(--main-black-color);
     position: relative;
     overflow: hidden; /*?*/
@@ -45,7 +44,6 @@ body {
     padding-bottom: 3px;
     border-bottom: 3px solid var(--main-white-color);
 }
-/* HEREEEEE */
 .navbar a.active-page {
     color: var(--main-red-color);
     border-bottom: 3px solid var(--main-red-color);
@@ -106,9 +104,39 @@ a:active {
 a.table-choice {
     padding: 15px;
 }
+/* FOOD IMAGE */
+.food-images {
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
+    /* text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; */
+}
+.image-display {
+    /* flex-direction: row; */
+}
+img.food-image {
+    flex-direction: column;
+    /* flex: auto; */
+
+    
+    width: 20%;
+    /*why doesn't this work if it's flex? it does work */
+    height: auto;
+    /* margin: 12px; */
+
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* flex: 100%;  */
+    /* we have to flex at the bottom too */
+    
+}
 /* TABLE */
 table {
-    text-align: center;
+    /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -140,12 +168,15 @@ div#food-information {
 }
 .lorem-ipsum-row {
     display: flex;
-    margin-left: 32px;
-    margin-right:32px;
+    margin-left: 120px;
+    margin-right:120px;
     padding: 18px;
 }
 .lorem-ipsum-col {
-    flex: 50%;
+    flex: 40%;
+    text-justify: auto;
+    margin-left: 12px;
+    margin-right: 12px;;
 }
 
 
