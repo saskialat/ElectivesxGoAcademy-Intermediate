@@ -1,17 +1,76 @@
+/* COLORS */
 :root {
     --main-red-color: #F1533C;
     --main-yellow-color: #F5DE38;
     --main-light-gray-color: #ACACAC;
-    --main-black-color: #232528;
+    /* --main-black-color: #232528; */
+    --main-black-color: #000000;
     --main-white-color: #8b8686;
     --main-blue-color: #245BFF;
 }
+/* FORMAT */
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--main-black-color);
     margin: 0;
 }
-/* THE NAVBAR */
+/* TITLE */
+h1#page-title {
+    font-size: 72px;
+    padding-left: 6px;
+}
+/* LINKS */
+a {
+    color: var(--main-red-color);
+
+}
+a:link {
+    text-decoration: none;
+    font-weight: 900;
+}
+a:hover {
+    color: var(--main-yellow-color);
+}
+a:active {
+    color: #000000;
+}
+/* 2 COL PARAGRAPH */
+.lorem-ipsum-row {
+    display: flex;
+    margin-left: 120px;
+    margin-right:120px;
+    padding: 18px;
+}
+.lorem-ipsum-col {
+    flex: 40%;
+    text-justify: auto;
+    margin-left: 12px;
+    margin-right: 12px;;
+}
+/* TABLE */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th {
+    border-bottom: 3px solid var(--main-black-color);
+    padding: 32px;
+}
+th {
+    font-weight: bolder;
+    font-size: 36px;
+    padding-bottom: 3px;
+    text-align: left;
+    padding-left: 3px;
+    padding-right:3px;
+}
+td.property:hover {
+    background-color: var(--main-yellow-color);
+}
+td.action:hover {
+    background-color: var(--main-light-gray-color); 
+}
+/* NAVIGATION BAR */
 .fixed-navbar {
     position:fixed;
     top:0;
@@ -79,31 +138,7 @@ body {
 .navbar .search-bar button:hover {
     color: var(--main-yellow-color)
 }
-/* TITLE */
-h1#page-title {
-    font-size: 60px;
-    padding-left: 6px;
-}
-a {
-    color: var(--main-red-color);
-
-}
-a:link {
-    text-decoration: none;
-    font-weight: 900;
-}
-a.table-choice:link {
-    text-transform: uppercase;
-}
-a:hover {
-    color: var(--main-yellow-color);
-}
-a:active {
-    color: #000000;
-}
-a.table-choice {
-    padding: 15px;
-}
+/* SPECIFIC TO FOOD PAGE */
 /* FOOD IMAGE */
 .food-images {
     /* display: flex; */
@@ -134,49 +169,21 @@ img.food-image {
     /* we have to flex at the bottom too */
     
 }
-/* TABLE */
-table {
-    /* text-align: center; */
-    margin-left: auto;
-    margin-right: auto;
-}
-td, th {
-    border-bottom: 3px solid var(--main-black-color);
-    padding: 32px;
-}
-th {
-    font-weight: bolder;
-    font-size: 36px;
-    padding-bottom: 3px;
-    text-align: left;
-    padding-left: 3px;
-    padding-right:3px;
-}
-td.property:hover {
-    background-color: var(--main-yellow-color);
-}
-td.action:hover {
-    background-color: var(--main-light-gray-color); 
-}
+/* FOOD INFORMATION - FOODS */
 div#food-information {
     text-align: center;
 }
-
-.new-food {
+/* Food table link */
+a.table-choice:link {
+    text-transform: uppercase;
+}
+a.table-choice {
+    padding: 15px;
+}
+a#new-food {
     font-size: 36px;
     text-align: left; /* Why doesn't this work? */
-}
-.lorem-ipsum-row {
-    display: flex;
-    margin-left: 120px;
-    margin-right:120px;
-    padding: 18px;
-}
-.lorem-ipsum-col {
-    flex: 40%;
-    text-justify: auto;
-    margin-left: 12px;
-    margin-right: 12px;;
+    margin-top: 32px; /* This doesn't work either */
 }
 
 
