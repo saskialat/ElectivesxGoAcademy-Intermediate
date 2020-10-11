@@ -5,8 +5,9 @@
     --main-light-gray-color: #ACACAC;
     /* --main-black-color: #232528; */
     --main-black-color: #000000;
-    --main-white-color: #8b8686;
+    /* --main-white-color: #8b8686; */
     --main-blue-color: #245BFF;
+    --main-white-color: #ffffff;
 }
 /* FORMAT */
 body {
@@ -95,13 +96,13 @@ td.action:hover {
     transform: translate(-50%, -50%);
 }
 .navbar .centered-nav a {
-    color: var(--main-white-color);
+    color: var(--main-light-gray-color);
     font-size: 18px;
     text-align: center; /* Why doesn't this work?*/
     padding-left: 6px;
     padding-right: 6px;
     padding-bottom: 3px;
-    border-bottom: 3px solid var(--main-white-color);
+    border-bottom: 3px solid var(--main-light-gray-color);
 }
 .navbar a.active-page {
     color: var(--main-red-color);
@@ -123,9 +124,19 @@ td.action:hover {
 .navbar .search-bar input[type=text] {
     padding: 6px;
     font-size: 18px;
-    border-bottom: 3px solid var(--main-black-color);
+    border: 3px solid var(--main-light-gray-color);
     border-radius: 12px;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    color: var(--main-light-gray-color);
+
 }
+/* .navbar .search-bar input[type=text]:focus {
+    border: none;
+    color: var(--main-yellow-color);
+
+} */
 .navbar .search-bar button {
     float: right;
     padding: 6px 10px;
@@ -134,6 +145,7 @@ td.action:hover {
     cursor: pointer;
     color: var(--main-red-color);
     background-color: var(--main-black-color);
+    outline: none;
 }
 .navbar .search-bar button:hover {
     color: var(--main-yellow-color)
